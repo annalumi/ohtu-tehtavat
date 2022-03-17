@@ -1,3 +1,3 @@
 # ohtu-tehtavat
 
-Tehtävät viikko2.9
+Tehtävä 2.9
