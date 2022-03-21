@@ -3,10 +3,8 @@ from player import Player
 
 def main():
     url = "https://nhlstatisticsforohtu.herokuapp.com/players"
-    response = requests.get(url).json()
 
-    #print("JSON-muotoinen vastaus:")
-    #print(response)
+    response = requests.get(url).json()
 
     players = []
 
@@ -21,11 +19,12 @@ def main():
 
         players.append(player)
 
-    print("Oliot:")
+    print("Players from FIN:")
 
     for player in players:
         if player.nationality == "FIN":
-            print(f"{player.name} team {player.team} assists {player.assists} goals {player.goals}")
+            total = player.assists + player.goals
+            print (f"{player.name:20} {player.team:4} {str(player.assists):2} + {str(player.goals):2} = {str(total):2}")
 
 if __name__ == "__main__":
     main()
