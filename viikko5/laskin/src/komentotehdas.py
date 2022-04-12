@@ -4,7 +4,6 @@ class Summa:
         self.sovellus = sovellus
 
     def suorita(self):
-        self.arvo = self.sovellus.tulos
         return self.sovellus.plus(self.io())
 
 class Erotus:
@@ -13,7 +12,6 @@ class Erotus:
         self.sovellus = sovellus
 
     def suorita(self):
-        self.arvo = self.sovellus.tulos
         return self.sovellus.miinus(self.io())
 
 class Nollaus:
@@ -22,7 +20,6 @@ class Nollaus:
         self.sovellus = sovellus
 
     def suorita(self):
-        self.arvo = self.sovellus.tulos
         return self.sovellus.nollaa()
 
 
