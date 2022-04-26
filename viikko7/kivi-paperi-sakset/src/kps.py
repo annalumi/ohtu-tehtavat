@@ -19,7 +19,7 @@ class KPS:
             print(tuomari)
 
     def _ensimmaisen_siirto(self):
-      return input("Ensimmäisen pelaajan siirto: ")
+        return input("Ensimmäisen pelaajan siirto: ")
 
     # tämän metodin toteutus vaihtelee eri pelityypeissä
     def _toisen_siirto(self, ensimmaisen_siirto):
@@ -50,4 +50,4 @@ class KPSTekoaly(KPS):
 
 class KPSParempiTekoaly(KPSTekoaly):
     def __init__(self):
-        self_tekoaly = TekoalyParannettu(10)
+        self._tekoaly = TekoalyParannettu(10)
